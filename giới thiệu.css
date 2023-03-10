@@ -1,0 +1,8 @@
+/* liên kết với giới thiệu.html */
+li:first-child::first-letter{
+    color: rgb(214, 233, 9);
+    font-size: 50px
+}
+.mytable {border: 0px solid olivedrab; width: 100%; }
+.mytable th {border: 5px solid rgb(40, 221, 149); padding: 1px;}
+.mytable td {border: 2px solid rgb(58, 239, 13); padding: 10px;}
