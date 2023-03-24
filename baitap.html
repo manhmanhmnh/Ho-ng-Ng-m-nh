@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoàng Mạnh</title>
+
+</head>
+
+<style>
+    #Mainmenu{
+    position: relative;
+    float: left;
+    background: rgba(236, 233, 31, 0.298);
+    height: 200px; ;
+    width: 100%;;
+}
+#Header{
+    float: left;
+    background: blue;
+    height: 50px; ;
+    width: 20%;
+    text-align: center;
+    font-size: 30px;
+}
+#SideBarA{
+  
+    float: left;
+    background: rgb(47, 125, 47);
+    height: 700px;
+    width: 80%;
+}
+#Content{
+    float: top;
+    background: orange;
+    height: 700px;
+    width: 20%;
+}
+#Footer{
+    float: right;
+    background: rgb(206, 8, 216);
+    height: 70px;
+    width: 100%;
+}
+#div1
+{
+    float: top;
+    background: rgb(229, 13, 214);
+    height: 50px;
+    width: 100%;
+
+}
+#div1 ul
+{
+    list-style: none;
+}
+#div1 ul li
+{
+    position: relative;
+    float: right;
+}
+/* chỉnh màu chữ */
+#div1 li a
+{
+    text-decoration: none;
+    color: rgb(33, 10, 207);
+    padding:  .3cm 20px;
+    font-size: 22px;
+    display: block;
+}
+#div1 li ul
+{
+    position: absolute;
+    display: none;
+}
+#div1 li:hover ul{
+    display: block;
+}
+/* chỉnh màu khi trỏ vào chữ */
+#div1 ul li a:hover
+{
+    color: rgb(43, 224, 37);
+}
+/* chỉnh khung bảng */
+.a1 a:link
+{
+border:1px solid;
+width:4cm;
+}
+</style>
+
+
+<body>
+    <div id="div1">
+        <ul>
+        <li><a href="#">Thông tin</a></li>
+        <li><a href="#">Đào tạo</a>
+        <ul class="a1">
+        <li><a href="#">Lịch học</a></li>
+        <li><a href="#">Bài tập</a></li>
+        <li><a href="#">Quản lí công việc</a></li>
+        </ul>
+        <li><a href="#">Giới thiệu</a>
+        <li><a href="#">Trang chủ</a>
+        </ul>
+    </div>    
+    </li>
+    </ul>
+    <div id="Header">
+        <td>
+        Đào tạo
+        <br>
+        <br>Lịch học <br>Bài Tập 
+        <br>Quản lý công việc
+        </td>
+    </div>
+    <div id="SideBarA"></div>
+    <div id="Content"></div>
+    <div id="Footer"></div>
+</body>
