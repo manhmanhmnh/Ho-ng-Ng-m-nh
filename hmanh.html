@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<link rel="stylesheet" href="hmanh.css">
+<script>
+   document.addEventListener('DOMContentLoaded', function() {
+     var parent = document.querySelector('.splitview'),
+         topPanel = parent.querySelector('.top'),
+         handle = parent.querySelector('.handle'),
+         skewHack = 0,
+         delta = 0;
+     if (parent.className.indexOf('skewed') != -1) {
+         skewHack = 1000;
+     }
+     parent.addEventListener('mousemove', function(event) {
+         delta = (event.clientX - window.innerWidth / 2) * 0.5;
+ 
+         handle.style.left = event.clientX + delta + 'px';
+ 
+         topPanel.style.width = event.clientX + skewHack + delta + 'px';
+     });
+ });
+</script>
+<body>
+     <!-- đoạn 1 -->
+     <table>
+          <tr>
+            <td class="col1">
+               <h1>Hoàng Mạnh</h1>
+            </td>
+            <td class="col2">
+               <a href="https://www.facebook.com/hoangmanhreal">Facebook</a>
+            </td>
+            <td class="col3">
+               <a href="https://zaloapp.com/qr/p/1jvty934non0f">Zalo</a>
+            </td>
+            <td class="col4">
+               <a href="https://www.facebook.com/hoangmanhreal">0919599554</a>
+            </td>
+          </tr>
+     </table>
+<!-- đoạn 2 -->
+<div class="splitview skewed">
+   <div class="panel bottom">
+       <div class="content">
+           <div class="description">
+               <h1>Hoàng Mạnh Real</h1>
+           </div>
+           <img src="https://scontent.fsgn2-9.fna.fbcdn.net/v/t39.30808-6/279888331_302501125374462_496824613440149597_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=rGt6Bwe90MIAX8fGoHC&_nc_ht=scontent.fsgn2-9.fna&oh=00_AfABuZvqLPBZTBiYIy-rhTf9xkAeszaDhYL9Ygx5lNPOgg&oe=649204DD" alt="Original">
+       </div>
+   </div>
+   <div class="panel top">
+       <div class="content">
+           <div class="description">
+               <h1>Hoàng Mạnh</h1>
+           </div>
+
+           <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/353856963_489518293351450_5637750441370264197_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=aee45a&_nc_ohc=q5PaUZtElkIAX9qTSn-&_nc_oc=AQmmoPoK7cdSreVs2U8Y4rM3R9NOmPlda5EV7hm7XhwzuJVFuIc-PFxQyzMvYb2fADnEAtZdp93jxfUCzERpzQHt&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdSHcnqYT3cvFq6ID80Bhoa47t_Pe1LkCmobApTISDlqEA&oe=64B3F72A" alt="Duotone">
+       </div>
+   </div>
+   <div class="handle"></div>
+</div>
+<!-- đoạn 3 -->
+<div id="doan_cuoi">
+        <tr>
+            <td class="manh1">
+                <a href="https://drive.google.com/file/d/1sn89eQcChb-X2M4BTEPHlPd6Dl7MbSgM/view?usp=drive_link"><img src="https://wingiare.com/wp-content/uploads/2020/09/co-hay-khong-office-2021-2-1068x664.jpg" alt=""></a>
+            </td>
+        </tr>
+        <tr>
+            <td class="manh2">
+                <a href="https://drive.google.com/file/d/1sn89eQcChb-X2M4BTEPHlPd6Dl7MbSgM/view?usp=drive_link"><img src="https://wingiare.com/wp-content/uploads/2020/09/co-hay-khong-office-2021-2-1068x664.jpg" alt=""></a>
+
+            </td>
+        </tr>
+        <tr>
+            <td class="manh3">
+                <a href="https://drive.google.com/file/d/1sn89eQcChb-X2M4BTEPHlPd6Dl7MbSgM/view?usp=drive_link"><img src="https://wingiare.com/wp-content/uploads/2020/09/co-hay-khong-office-2021-2-1068x664.jpg" alt=""></a>
+            </td>
+        </tr>
+        <tr>
+            <td class="manh4">
+                <a href="https://drive.google.com/file/d/1sn89eQcChb-X2M4BTEPHlPd6Dl7MbSgM/view?usp=drive_link"><img src="https://wingiare.com/wp-content/uploads/2020/09/co-hay-khong-office-2021-2-1068x664.jpg" alt=""></a>
+            </td>
+        </tr>
+</div>
+</body>
+</html>
