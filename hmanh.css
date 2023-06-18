@@ -124,9 +124,14 @@ body {
       font-size: 75%;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 500px) {
   body {
       font-size: 65%;
+  }
+}
+@media (min-width: 400px) {
+  body {
+      font-size: 45%;
   }
 }
 #doan_cuoi {
