@@ -130,8 +130,8 @@ body {
   }
 }
 @media (min-width: 400px) {
-  body {
-      font-size: 45%;
+  .col1 {
+    font-size: 85%;
   }
 }
 #doan_cuoi {
